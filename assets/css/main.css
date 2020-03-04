@@ -2178,6 +2178,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="mobile"],
 	input[type="tel"],
 	select,
 	textarea {
@@ -2200,6 +2201,7 @@ input, select, textarea {
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
+		input[type="mobile"]:invalid,
 		input[type="tel"]:invalid,
 		select:invalid,
 		textarea:invalid {
@@ -2209,6 +2211,7 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="mobile"]:focus,
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
@@ -2241,8 +2244,9 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="mobile"],
 	select {
-		height: 2.75em;
+		height: 2.5em;
 	}
 
 	textarea {

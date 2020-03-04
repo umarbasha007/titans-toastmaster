@@ -1,8 +1,5 @@
-/*
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
+
 
 (function($) {
 
@@ -142,4 +139,21 @@
 
 			});
 
+		$("#resetContact").on('click', function(event){
+
+			console.log("Testing");
+			console.log(event);
+			var formVal = $('form');
+			console.log(formVal);
+			formVal.find("input#name").val('');
+			formVal.find("input#email").val('');
+			formVal.find("input#mobile").val('');
+			formVal.find("textarea#message").val('');
+
+		});
+
+		$("#sendMessage").on('click', function(event){
+
+			console.log("send");
+		});
 })(jQuery);
