@@ -152,6 +152,7 @@
 			formVal.find("input#email").val('');
 			formVal.find("input#mobile").val('');
 			formVal.find("textarea#message").val('');
+		
 
 		});
 
@@ -163,19 +164,27 @@
 			console.log(formData);
 
 			$.ajax({
-				url : "https://script.google.com/macros/s/AKfycbxz8bAK-m_GQK8WMZQsUc65WGeXwFiWZ9651wop/exec",
+				url : "https://script.google.com/macros/s/AKfycbyH1dReN7ETm0K2vvH_Iy0ts0UBVnrHYYz508xLuu_5hx2tiMI/exec",
 				type: "POST",
 				data : formData,
 				success: function(data, textStatus, jqXHR)
 				{
 					console.log("success: ");
 					console.log(data,textStatus);
+					var formVal = $('form');
+					console.log(formVal);
+					formVal.find("input#name").val('');
+					formVal.find("input#email").val('');
+					formVal.find("input#mobile").val('');
+					formVal.find("textarea#message").val('');
 				},
 				error: function (jqXHR, textStatus, errorThrown)
 				{
 					console.error(jqXHR, textStatus,errorThrown);
 				}
 			});
+
+
 
 		});
 
