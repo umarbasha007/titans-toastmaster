@@ -158,6 +158,25 @@
 		$("#sendMessage").on('click', function(event){
 
 			console.log("send");
+
+			var formData = $("#formInfo").serializeArray();
+			console.log(formData);
+
+			$.ajax({
+				url : "https://script.google.com/macros/s/AKfycbxz8bAK-m_GQK8WMZQsUc65WGeXwFiWZ9651wop/exec",
+				type: "POST",
+				data : formData,
+				success: function(data, textStatus, jqXHR)
+				{
+					console.log("success: ");
+					console.log(data,textStatus);
+				},
+				error: function (jqXHR, textStatus, errorThrown)
+				{
+					console.error(jqXHR, textStatus,errorThrown);
+				}
+			});
+
 		});
 
 		
