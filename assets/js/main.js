@@ -22,6 +22,8 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+
+			
 		});
 
 	// Header.
@@ -138,6 +140,7 @@
 						$menu._hide();
 
 			});
+//additional code
 
 		$("#resetContact").on('click', function(event){
 
@@ -156,4 +159,7 @@
 
 			console.log("send");
 		});
+
+		
+
 })(jQuery);

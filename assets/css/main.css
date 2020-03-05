@@ -4161,13 +4161,6 @@ input, select, textarea {
 
 /*Additional Changes*/
 
-
-
-
-
-
-
-
 .show-top {
 	border-radius: 30px;
 	position: fixed;
@@ -4175,8 +4168,37 @@ input, select, textarea {
 	bottom: 0;
 	z-index: 5;
 	margin: 10px;
-	background-color: #3f4e85;
+	background-color: #3f4e85 !important;
 	opacity: 0.7;
 	width: 82px !important;
 	padding: 0px;
+
+
+}
+
+@media screen and (max-width: 768px) {
+	.google-maps {
+		padding-bottom: 24px; 
+	}
+
+	.google-maps iframe {
+		border-radius: 5px;
+		border : 1px solid blue;
+		margin: auto;
+		width: 100%;
+		
+	}
+}
+.google-maps {
+
+	
+    padding-bottom: 24px; 
+  
+}
+
+.google-maps iframe {
+	border-radius: 5px;
+	border : 1px solid blue;
+	margin: auto;
+	width: 100%;
 }
